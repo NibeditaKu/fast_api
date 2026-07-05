@@ -12,7 +12,7 @@ teas: List[tea]=[]
 
 @app.get("/")
 def read_root():
-    return {"message": "welcome to the tea API"}
+    return {"message": "welcome to the tea API. Nibedita Roy"}
 
 @app.get("/teas")
 def get_teas():
@@ -29,4 +29,4 @@ def update_tea(tea_id:int, updated_tea:tea):
         if tea.id==tea_id:
             teas[index]=updated_tea
             return updated_tea
-    return{"error":"tea not found"}
+    return{"error":"tea not found."}
