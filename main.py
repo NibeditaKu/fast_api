@@ -12,7 +12,7 @@ teas: List[tea]=[]
 
 @app.get("/")
 def read_root():
-    return {"message": "welcome to the tea API. Nibedita Roy,I am from Malda."}
+    return {"message": "welcome to the tea API.I am from Malda."}
 
 @app.get("/teas")
 def get_teas():
